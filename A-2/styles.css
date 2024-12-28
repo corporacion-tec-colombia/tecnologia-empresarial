@@ -1,0 +1,75 @@
+/* Custom CSS for Medical Landing Page */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+#services .fa-solid {
+    color: #00f2fe;
+}
+
+#services h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+blockquote {
+    border-left: 5px solid #4facfe;
+    padding-left: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#contact h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#contact form .form-control {
+    border-radius: 0.5rem;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    #services .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    #contact .row {
+        flex-direction: column;
+    }
+}
