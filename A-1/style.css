@@ -1,0 +1,85 @@
+/* Establece el estilo de fuente en cursiva para todos los elementos */
+* {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#particles-js {
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Clase para deshabilitar el desplazamiento */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Clase para centrar elementos verticalmente */
+.centrado {
+
+    font-size: 1.3em;
+    position: absolute;
+    z-index: 10;
+    width: 200px;
+    height: 220px;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -100px;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+/* Definición de la animación lds-ripple */
+@keyframes lds-ripple {
+
+    0%,
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+
+section a {
+    color: black;
+    text-decoration: none;
+
+}

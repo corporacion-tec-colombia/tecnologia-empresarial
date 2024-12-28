@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanerson</title>
+    <link rel="shortcut icon" href="../../../img/ico/good.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="text-center mt-5">
+        <div class="container">
+            <h1>Gestor</h1>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section>
+            <h2>Registrar</h2>
+            <form id="ventaForm">
+                <div class="mb-3">
+                    <label for="producto" class="form-label">Producto:</label>
+                    <input type="text" class="form-control" id="producto" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad:</label>
+                    <input type="number" class="form-control" id="cantidad" required>
+                </div>
+                <div class="mb-3">
+                    <label for="precio" class="form-label">Precio:</label>
+                    <input type="number" class="form-control" id="precio" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </section>
+
+        <!-- Dentro de la sección "Tabla de Ventas" -->
+        <section>
+            <h2>Tabla</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="background-color:black; color: white;">
+                            Producto</th>
+                        <th style="background-color:black; color: white;"class="site">Cantidad</th>
+                        <th style="background-color:black; color: white;"class="th">Precio</th>
+                        <th style="background-color:black; color: white;"class="th">Total</th>
+                        <th style="background-color:black; color: white;"class="th">Fecha</th>
+                        <th style="background-color:black; color: white;"style="background-color: rgb(197, 196, 255);" class="rounded">
+                            <label for="precio" style="background-color:black; color: white;">Gran Total:</label>
+                            <input class="form-control me-2" type="search" id="Gran" class="rounded"
+                                style="color: rgb(0, 0, 0);">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="ventasTableBody"></tbody>
+            </table>
+        </section>
+
+
+        <section>
+            <div class="text-center ">
+                <button id="exportButton" class="btn btn-primary">Imagen</button>
+                <button type="button" class="btn btn-success" onclick="exportarExcel()">Excel</button>
+            </div>
+        </section>
+    </main>
+
+
+    <br><br><br>
+
+
+    <footer class="text-center mt-5">
+        <p>© Gestor 2023 <i class="bi bi-patch-check-fill"></i></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.0/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.3.2/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>
