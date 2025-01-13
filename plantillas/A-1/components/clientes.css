@@ -1,0 +1,98 @@
+/* General */
+body {
+    margin-top: 56px; /* Espacio para la barra de navegación fija */
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo sutil */
+    color: #212529;
+}
+
+.navbar {
+    background-color: #343a40; /* Fondo oscuro */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Contenedor de actualizaciones */
+.my-3.p-3 {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.d-flex.text-body-secondary.pt-3 {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.d-flex.text-body-secondary.pt-3:last-child {
+    border-bottom: none;
+}
+
+.d-flex.text-body-secondary .btn {
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+footer a {
+    color: #00d1b2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+        /* Estilo para el navbar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Fondo semi-transparente */
+            backdrop-filter: blur(10px);
+            /* Efecto de desenfoque */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00bcd4;
+            /* Color en hover para los enlaces */
+        }
+
+        .dropdown-menu {
+            background: #333;
+            /* Fondo oscuro para el dropdown */
+            border-radius: 8px;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+            /* Icono de la hamburguesa blanco */
+        }
+
+        .dropdown-item:hover {
+            background-color: #00bcd4;
+            /* Color de fondo al hacer hover en los items */
+        }
+
+        .navbar-brand {
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 1.5px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: black;
+        }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de gestión de inventario eficiente y accesible.">
+    <title>Gestión de Inventario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="clientes.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow px-4 py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark fw-bold fs-4" href="#">Gestión de Inventario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-semibold fs-5" href="#" id="navbarSections" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Abrir menú de secciones">Secciones</a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow" aria-labelledby="navbarSections">
+                            <li><a class="dropdown-item" href="components/clientes.html">Clientes</a></li>
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="#">Caja</a></li>
+                            <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                            <li><a class="dropdown-item" href="#">Afiliados</a></li>
+                            <li><a class="dropdown-item" href="#">Productos</a></li>
+                            <li><a class="dropdown-item" href="#">Ingresos</a></li>
+                            <li><a class="dropdown-item" href="#">Banco</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <section class="mb-4">
+            <h2 class="h4 text-center fw-bold mb-4">Lista de Productos</h2>
+            <div id="productList" class="list-group border rounded" aria-live="polite" aria-label="Lista de productos disponibles"></div>
+        </section>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal" aria-label="Agregar un nuevo producto">
+                <i class="bi bi-plus-lg"></i> Agregar o Modificar
+            </button>
+        </div>
+
+        <!-- Modal Agregar Producto -->
+        <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addProductModalLabel">Agregar o Editar Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addProductForm" novalidate>
+                            <div class="form-group mb-3">
+                                <label for="productName" class="form-label">Nombre del Producto</label>
+                                <input type="text" id="productName" class="form-control" placeholder="Nombre del producto" required autocomplete="off" aria-required="true">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="productImage" class="form-label">Seleccionar Imagen</label>
+                                <input type="file" id="productImage" class="form-control" accept="image/*" aria-label="Subir imagen del producto">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="productLocation" class="form-label">Ubicación</label>
+                                <input type="text" id="productLocation" class="form-control" placeholder="Ubicación del producto" required autocomplete="off" aria-required="true">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="productDescription" class="form-label">Descripción</label>
+                                <textarea id="productDescription" class="form-control" placeholder="Descripción breve del producto" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Guardar Producto</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-5 border-top">
+        <p class="mb-2">&copy; 2025 Momohause | <span class="fw-bold">Innovando para tu futuro</span></p>
+        <a href="#" class="text-decoration-none text-primary fw-bold">Eficiencia, organización, innovación</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="clientes.js"></script>
+</body>
+
+</html>

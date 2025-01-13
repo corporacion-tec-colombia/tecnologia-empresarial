@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url('img/fondo.jpg'); /* Cambia a tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+
+/* cabeza texto */
+
+.header-text {
+
+
+
+color: white;
+
+
+}
+
+
+/* Estilos para los botones interactivos */
+        .btn-interactivo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px white;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        /* Efecto hover para botones interactivos */
+        .btn-interactivo:hover {
+            transform: translateY(-5px);
+            text-decoration: none;
+        }
+
+        /* Iconos dentro de los botones */
+        .btn-interactivo i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }

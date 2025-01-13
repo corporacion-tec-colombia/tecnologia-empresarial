@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta</title>
+    <!-- linkeos internos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS de Bootstrap para estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <header class="container py-5 header-text" >
+        <h1 class="text-center mb-4">Punto de Venta <br> Version 1.0</h1>
+    </header>
+
+    <!-- Sección principal con botones interactivos -->
+    <main class="container py-5">
+        <section class="row g-4">
+            <!-- Botón de "Clientes" -->
+            <article class="col-md-3">
+                <a href="components/clientes.html" class="btn-interactivo" onclick="handleClick('Clientes')">
+                    <i class="bi bi-people text-primary"></i>
+                    <h5>Clientes</h5>
+                </a>
+            </article>
+            <!-- Botón de "Caja" -->
+            <article class="col-md-3">
+                <a href="#" class="btn-interactivo" onclick="handleClick('Caja')">
+                    <i class="bi bi-bag-fill text-success"></i>
+                    <h5>Caja</h5>
+                </a>
+            </article>
+            <!-- Botón de "Pedidos" -->
+            <article class="col-md-3">
+                <a href="#" class="btn-interactivo" onclick="handleClick('Pedidos')">
+                    <i class="bi bi-clock text-warning"></i>
+                    <h5>Pedidos</h5>
+                </a>
+            </article>
+            <!-- Botón de "Afiliados" -->
+            <article class="col-md-3">
+                <a href="#" class="btn-interactivo" onclick="handleClick('Afiliados')">
+                    <i class="bi bi-shield-check text-info"></i>
+                    <h5>Afiliados</h5>
+                </a>
+            </article>
+            <!-- Botón de "Productos" -->
+            <article class="col-md-3">
+                <a href="#" class="btn-interactivo" onclick="handleClick('Productos')">
+                    <i class="bi bi-box-seam text-secondary"></i>
+                    <h5>Productos</h5>
+                </a>
+            </article>
+            <!-- Botón de "Ingresos" -->
+            <article class="col-md-3">
+                <a href="#" class="btn-interactivo" onclick="handleClick('Ingresos')">
+                    <i class="bi bi-receipt text-danger"></i>
+                    <h5>Ingresos</h5>
+                </a>
+            </article>
+            <!-- Botón de "Banco" -->
+            <article class="col-md-3">
+                <a href="#" class="btn-interactivo" onclick="handleClick('Banco')">
+                    <i class="bi bi-bank text-dark"></i>
+                    <h5>Banco</h5>
+                </a>
+            </article>
+        </section>
+    </main>
+
+
+
+    <!-- se inactiva esta secsion temporal mente 
+    <footer>
+        <section>
+            <nav class="nav nav-pills flex-column flex-sm-row justify-content-center">
+                <a class="flex-sm-fill text-sm-center nav-link active" href="#" onclick="handleClick('Usuarios')"
+                    aria-label="Ir a Usuarios">Usuarios</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="handleClick('Permisos')"
+                    aria-label="Ir a Permisos">Permisos</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="handleClick('Backup')"
+                    aria-label="Ir a Backup">Backup</a>
+                <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" aria-disabled="true"
+                    onclick="handleClick('Configuración')" aria-label="Configuración deshabilitada">Configuración</a>
+            </nav>
+        </section>
+        <section>
+            <h1>derechos reservados a </h1>
+        </section>
+    </footer>
+-->
+<br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> 
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-body-tertiary border-top">
+        <p class="text-dark mb-2">© 2025 Momohause | Innovando para tu futuro</p>
+        <p class="mb-0">
+            <a href="#" class="text-decoration-none text-info fw-bold">Tecnología Empresarial <br> innovacion, progreso, compromiso, | leopoldo</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="codigo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
